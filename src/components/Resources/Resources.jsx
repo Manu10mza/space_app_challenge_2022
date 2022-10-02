@@ -56,7 +56,7 @@ export default function Resources() {
               />
             </a>
             <a
-              href="https://github.com/unnamedNasaSpaceApps/Moonquake-Map"
+              href="https://github.com/Manu10mza/space_app_challenge_2022"
               target="_blank"
               rel="noopener noreferrer"
             >
