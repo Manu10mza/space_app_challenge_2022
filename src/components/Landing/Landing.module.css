@@ -1,0 +1,98 @@
+.principal {
+  background-image: url("https://mymodernmet.com/wp/wp-content/uploads/2017/11/100-megapixel-moon.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.title {
+  color: rgb(211, 209, 209);
+  margin-top: 110px;
+  text-align-last: left;
+  margin-left: 120px;
+  position: absolute;
+}
+
+.title h1 {
+  font-family: "Zen Antique", serif;
+  font-size: 75px;
+}
+
+.btn {
+  font-family: "Zen Antique", serif;
+  font-style: italic;
+  display: inline-block;
+  color: white;
+  /* border: 1px solid #ccc; */
+  background: rgb(28, 29, 81);
+  box-shadow: 0 0 5px -1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  vertical-align: middle;
+  /* max-width: 200px; */
+  padding: 18px 85px;
+  text-align: center;
+  font-size: 45px;
+  border-radius: 8px;
+  margin-top: 50px;
+  margin-left: 350px;
+}
+
+.btn:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(65, 66, 130);
+
+  /* -webkit-transition: all 0.5s ease-in-out; */
+  transition: all 0.5s ease-in-out;
+  animation: moonquake 0.5s ease 0s 1 normal forwards;
+  transition: transform 0.2s; /* Animation */
+  transform: scale(1.5);
+}
+
+/* .landing {
+  background: #000000;
+  height: 95vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .landingTitle {
+  color: #ffffff;
+  opacity: 0.6;
+  position: absolute;
+  font-size: 7rem;
+} */
+
+/* h1.landingTitle {
+  animation: moonquake 0.5s ease 0s 1 normal forwards;
+} */
+
+@keyframes moonquake {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  75% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* @media (max-width: 520px) {
+  .landingTitle {
+    font-size: 5rem;
+  }
+
+  #backgroundLanding {
+    width: 100%;
+  }
+} */

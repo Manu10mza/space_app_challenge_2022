@@ -1,0 +1,117 @@
+/*GENERAL FEATURES*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+}
+
+/*---------------------------------------------*/
+
+.resources {
+  background: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.block1,
+.block2,
+.block3 {
+  display: flex;
+  color: #fff;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#flaticonImg {
+  max-width: 400px;
+}
+
+.blockParagraph {
+  margin: 5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.blockParagraph p {
+  max-width: 50rem;
+}
+
+#resourcesButton {
+  background: #fff;
+  border: none;
+  padding: 1rem 5rem;
+  max-width: 100%;
+  margin: 1rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+#resourcesButton:hover {
+  background: #eee;
+}
+
+#resourcesButton:active {
+  padding: 0.8rem 4.8rem;
+}
+
+.blockParagraph h1 {
+  margin-bottom: 2rem;
+}
+
+#flaticonImg {
+  margin: 5rem;
+}
+
+.block1 .blockParagraph {
+  margin-right: 20rem;
+}
+
+.block2 .blockParagraph {
+  margin-left: 20rem;
+}
+
+.block3 .blockParagraph {
+  margin-right: 20rem;
+}
+
+/* Arriba | Derecha | Abajo | Izquierda */
+
+@media (max-width: 1230px) {
+  .block1 .blockParagraph,
+  .block2 .blockParagraph,
+  .block3 .blockParagraph {
+    margin: 5rem;
+  }
+}
+
+@media (max-width: 955px) {
+  .resources img {
+    display: none;
+  }
+
+  .block1 {
+    margin-top: 5rem;
+  }
+}
+
+@media (max-width: 453px) {
+  #resourcesButton {
+    padding: 1rem 2.8rem;
+  }
+
+  #resourcesButton:active {
+    padding: 0.8rem 2.6rem;
+  }
+}

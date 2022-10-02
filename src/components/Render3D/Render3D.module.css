@@ -1,0 +1,11 @@
+.principal {
+  /* background-image: url("https://mymodernmet.com/wp/wp-content/uploads/2017/11/100-megapixel-moon.jpg"); */
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.canvas {
+  background-color: black;
+}
