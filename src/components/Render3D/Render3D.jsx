@@ -19,7 +19,11 @@ import s from "./Render3D.module.css";
 
 function Loader() {
   const { progress } = useProgress();
-  return <Html center>{progress} % loaded</Html>;
+  return (
+    <Html center>
+      <h1 className={s.loader}>{progress} % loaded</h1>
+    </Html>
+  );
 }
 
 export default function Render3D() {
@@ -31,7 +35,7 @@ export default function Render3D() {
         className={s.canvas}
         camera={{ fov: 35, zoom: 0.5, near: 1, far: 1000 }}
       >
-        <OrbitControls autoRotate={true} autoRotateSpeed={1} />
+        <OrbitControls autoRotate={true} autoRotateSpeed={0.1} />
         <Stars />
         <Suspense fallback={<Loader />}>
           <ambientLight intensity={40 / 100} />

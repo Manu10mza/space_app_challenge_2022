@@ -3,6 +3,8 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import rock from "./roca.jpg";
 import { useLoader } from "@react-three/fiber";
 import * as THREE from "three";
+import { Html } from "@react-three/drei";
+import s from "./Dot.module.css";
 
 export default function Dot({ location }) {
   const { lat, lon, type } = location;
@@ -18,7 +20,7 @@ export default function Dot({ location }) {
   //   });
 
   const r = 2;
-  console.log(location);
+  //console.log(location);
   const rockTexture = useLoader(THREE.TextureLoader, rock);
   return (
     <group
@@ -39,9 +41,17 @@ export default function Dot({ location }) {
         onPointerOver={(event) => setHover(true)}
         onPointerOut={(event) => setHover(false)}
       >
-        {/* <Html distanceFactor={10}> */}
-        {/* <div className="info">{name}</div> */}
-        {/* </Html> */}
+        <Html>
+          {clicked ? (
+            <div className={s.popup}>
+              <h3>Type: {type}</h3>
+              <h3>Latitude: {lat}</h3>
+              <h3>Longitude: {lon}</h3>
+            </div>
+          ) : (
+            <p></p>
+          )}
+        </Html>
         <sphereGeometry attach="geometry" args={[0.05, 32, 32, -Math.PI / 2]} />
         <meshStandardMaterial
           color={type === "deep" ? "red" : "#ffea03"}

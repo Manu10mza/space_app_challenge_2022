@@ -9,3 +9,7 @@
 .canvas {
   background-color: black;
 }
+
+.loader {
+  color: rgb(255, 255, 255);
+}
