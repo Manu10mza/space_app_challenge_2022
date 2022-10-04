@@ -97,7 +97,7 @@
   }
 
   .title {
-    color: rgb(211, 209, 209);
+    color: rgb(255, 255, 255);
     margin-top: 50px;
     text-align-last: center;
     position: absolute;
@@ -120,11 +120,11 @@
     cursor: pointer;
     vertical-align: middle;
     /* max-width: 200px; */
-    padding: 15px 50px;
+    padding: 15px 30px;
     text-align: center;
-    font-size: 35px;
+    font-size: 25px;
     border-radius: 8px;
     margin-top: 30px;
-    margin-left: 10px;
+    margin-left: 5px;
   }
 }
