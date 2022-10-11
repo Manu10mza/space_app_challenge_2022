@@ -11,7 +11,7 @@ export default function Landing() {
       <div className={s.title}>
         <h1>The Moonwalkers welcome you to:</h1>
         <br />
-        <h1>THE MOONQUAKES PROJECT</h1>
+        <h1>THE MOONQUAKE PROJECT</h1>
         <br />
         <Link to="/home">
           <button className={s.btn}>Come hear the noise</button>
